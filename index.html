@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PT. Primasindo Raya Abadi (PRA) - General Contractor & Façade Specialist. Solusi konstruksi sipil, façade, maintenance, & engineering profesional di Indonesia.">
+    <meta name="keywords" content="Kontraktor Sipil, Façade Specialist, Curtain Wall, Window Wall, PT Primasindo Raya Abadi, General Contractor Bekasi">
+    <meta name="author" content="PT. Primasindo Raya Abadi">
+    <title>PT. PRIMASINDO RAYA ABADI - General Contractor & Façade Specialist</title>
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PT. PRIMASINDO RAYA ABADI - General Contractor & Façade">
+    <meta property="og:description" content="Solusi Konstruksi & Façade Profesional untuk Proyek Anda. Mengedepankan kualitas, profesionalisme, dan integritas.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#002060',
+                            900: '#0b1329',
+                            950: '#060a17',
+                        },
+                        accent: {
+                            500: '#50b0d0', // Orange Accent
+                            600: '#408ca6',
+                            gold: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* Glassmorphism effects */
+        .glass-nav {
+            background: rgba(11, 19, 41, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .glass-card-dark {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b1329;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #38bdf8;
+            border-radius: 4px;
+        }
+
+        /* Active filter tab style */
+        .filter-btn.active {
+            background-color: #38bdf8;
+            color: #ffffff;
+            border-color: #38bdf8;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.35);
+        }
+
+        /* Hero Background Pattern Overlay */
+        .hero-pattern {
+            background-image: radial-gradient(rgba(249, 115, 22, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-accent-500 z-50 transition-all duration-150 w-0"></div>
+
+    <!-- Top Contact Bar -->
+    <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 sm:px-8 border-b border-slate-800 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-location-dot text-accent-500"></i>
+                    <span>Bekasi, Jawa Barat, Indonesia</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone text-accent-500"></i>
+                    <span>021-29367077</span>
+                </span>
+                <span class="flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope text-accent-500"></i>
+                    <span>primasindo.rayabadi@gmail.com</span>
+                </span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="bg-accent-500/20 text-accent-500 px-2 py-0.5 rounded text-[11px] font-semibold border border-accent-500/30">
+                    <i class="fa-solid fa-shield-halved mr-1"></i> Terverifikasi Kemenkumham
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="sticky top-0 z-40 glass-nav transition-all duration-300 border-b border-slate-800/80 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo -->
+                <a href="#home" class="flex items-center space-x-3 group">
+                    <img src="images/eleman_logo.jpeg" alt="Logo PT Primasindo Raya Abadi" class="w-11 h-11 rounded-lg object-contain shadow-md group-hover:scale-105 transition-transform duration-300">
+                    <div>
+                        <span class="text-lg sm:text-xl font-extrabold text-white tracking-wider block leading-none">PT. PRIMASINDO RAYA ABADI</span>
+                        <span class="text-[11px] font-semibold tracking-widest text-accent-500 block mt-1 uppercase">GENERAL CONTRACTOR & FACADE</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-200">
+                    <a href="#home" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Home</a>
+                    <a href="#about" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">About</a>
+                    <a href="#services" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Services</a>
+                    <a href="#why-us" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Mengapa Kami</a>
+                    <a href="#projects" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Projects</a>
+                    <a href="#clients" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Clients</a>
+                    <a href="#legalitas" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Legalitas</a>
+                    <a href="#contact" class="hover:text-accent-500 transition-colors py-2 border-b-2 border-transparent hover:border-accent-500">Contact</a>
+                </nav>
+
+                <!-- Desktop CTA Button -->
+                <div class="hidden lg:flex items-center">
+                    <a href="#contact" class="bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-orange-700 text-white px-5 py-2.5 rounded-lg font-semibold text-sm shadow-lg shadow-accent-500/25 hover:shadow-accent-500/40 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center space-x-2">
+                        <i class="fa-regular fa-comments"></i>
+                        <span>Konsultasi Proyek</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-md hover:bg-slate-800" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-navy-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Home</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">About</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Services</a>
+            <a href="#why-us" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Mengapa Kami</a>
+            <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Projects</a>
+            <a href="#clients" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Clients</a>
+            <a href="#legalitas" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Legalitas</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-accent-500">Contact</a>
+            <div class="pt-2">
+                <a href="#contact" class="mobile-nav-link block w-full text-center bg-accent-500 hover:bg-accent-600 text-white px-4 py-3 rounded-lg font-semibold text-sm shadow-md">
+                    Konsultasi Proyek
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-navy-950 text-white min-h-[90vh] flex items-center justify-center overflow-hidden pt-12 pb-20">
+        <!-- Hero Background Image & Gradient Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b2?q=80&w=2000&auto=format&fit=crop" alt="PT PRA Construction Background" class="w-full h-full object-cover opacity-25 filter brightness-75">
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/90 to-navy-950/80"></div>
+            <div class="absolute inset-0 hero-pattern"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Hero Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700/80 rounded-full px-4 py-1.5 text-xs sm:text-sm text-accent-500 font-semibold shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+                        <span>General Contractor & Façade Specialist</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight sm:leading-none text-white">
+                        Solusi Konstruksi & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-sky-400 to-accent-600">Façade Profesional</span> untuk Proyek Anda
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                        PT. Primasindo Raya Abadi menyediakan jasa sipil, kontraktor, façade, maintenance, engineering, serta pekerjaan konstruksi dengan mengedepankan kualitas, profesionalisme, dan integritas.
+                    </p>
+
+                    <!-- Hero Call-To-Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#services" class="w-full sm:w-auto bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/20 hover:shadow-accent-500/35 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center space-x-2">
+                            <span>Lihat Layanan</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto bg-slate-800/90 hover:bg-slate-700 border border-slate-700 text-slate-100 hover:text-white font-semibold px-8 py-4 rounded-xl shadow-md transition-all text-center flex items-center justify-center space-x-2">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Hubungi Kami</span>
+                        </a>
+                    </div>
+
+                    <!-- Key High Level Stats Grid -->
+                    <div class="pt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800/80">
+                        <div class="p-3 rounded-lg bg-navy-900/60 border border-slate-800/80 text-center lg:text-left">
+                            <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center lg:justify-start space-x-1">
+                                <i class="fa-solid fa-city text-accent-500 text-lg mr-2"></i>
+                                <span>General</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Contractor</div>
+                        </div>
+
+                        <div class="p-3 rounded-lg bg-navy-900/60 border border-slate-800/80 text-center lg:text-left">
+                            <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center lg:justify-start space-x-1">
+                                <i class="fa-solid fa-building text-accent-500 text-lg mr-2"></i>
+                                <span>Façade</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Specialist</div>
+                        </div>
+
+                        <div class="p-3 rounded-lg bg-navy-900/60 border border-slate-800/80 text-center lg:text-left">
+                            <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center lg:justify-start space-x-1">
+                                <i class="fa-solid fa-user-gear text-accent-500 text-lg mr-2"></i>
+                                <span>Experienced</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Engineering Team</div>
+                        </div>
+
+                        <div class="p-3 rounded-lg bg-navy-900/60 border border-slate-800/80 text-center lg:text-left">
+                            <div class="text-xl sm:text-2xl font-extrabold text-white flex items-center justify-center lg:justify-start space-x-1">
+                                <i class="fa-solid fa-award text-accent-500 text-lg mr-2"></i>
+                                <span>Professional</span>
+                            </div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">High Standard Service</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual Showcase Box -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-accent-500 to-sky-500 opacity-30 blur-xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700/80 bg-navy-900">
+                            <img src="images/logo_primasindo.jpeg" alt="PT PRA Engineering Project" class="w-full h-30 sm:h-70 object-cover">
+                            <div class="p-6 bg-navy-900/95 border-t border-slate-800">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="text-white font-bold text-lg">Integritas & Kualitas</h3>
+                                        <p class="text-slate-400 text-xs">Pekerjaan Sipil, Façade & Maintenance</p>
+                                    </div>
+                                    <span class="bg-accent-500/20 text-accent-500 p-2.5 rounded-lg border border-accent-500/30">
+                                        <i class="fa-solid fa-compass-drafting text-xl"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left Image Visual -->
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-accent-500/10 rounded-xl -z-10"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-navy-900/10 rounded-xl -z-10"></div>
+                        <img src="images/pondasi_tower.jpg" alt="Pekerjaan Konstruksi PT PRA" class="rounded-2xl shadow-xl border border-slate-200 object-cover w-full h-[400px]">
+
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl shadow-lg border border-slate-100">
+                            <div class="flex items-center space-x-4">
+                                <img src="images/eleman_logo.jpeg" alt="Logo PT Primasindo Raya Abadi" class="w-12 h-12 rounded-lg object-contain shadow-md group-hover:scale-105 transition-transform duration-300">
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">PT. Primasindo Raya Abadi</h4>
+                                    <p class="text-xs text-slate-500">Mitra Terpercaya Konstruksi & Façade</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right About Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>Profile Perusahaan</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                            Tentang PT. Primasindo Raya Abadi
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+                        <strong>PT. Primasindo Raya Abadi (PRA)</strong> merupakan perusahaan yang menyediakan Jasa Sipil (Kontraktor Sipil) dan Façade.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Didukung oleh tenaga kerja yang kompeten, peralatan yang sesuai standar industri, serta komitmen penuh terhadap keselamatan dan ketepatan waktu, kami siap melayani berbagai skala proyek infrastruktur, gedung bertingkat, transmisi kelistrikan, hingga façade arsitektural modern di seluruh wilayah Indonesia.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start space-x-3">
+                            <div class="p-2 bg-accent-500/10 text-accent-500 rounded-lg">
+                                <i class="fa-solid fa-helmet-safety text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Jasa Sipil & Kontraktor</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Konstruksi, perawatan, dan finishing keteknikan.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start space-x-3">
+                            <div class="p-2 bg-navy-900/10 text-navy-900 rounded-lg">
+                                <i class="fa-solid fa-layer-group text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Spesialis Façade</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Supply, instalasi, dan pengujian keborocan (PMU).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-16 bg-slate-100/80 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Visi & Misi Perusahaan</h2>
+                <p class="text-slate-500 text-sm mt-2">Landasan fundamental dalam memberikan pelayanan terbaik untuk calon klien dan mitra kerja</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Vision Card -->
+                <div class="glass-card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent-500 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-900 mb-4">VISI</h3>
+                        <blockquote class="text-slate-700 italic text-lg leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            "Menjadi Perusahaan yang terkemuka dan inovatif di bidang Jasa Sipil (Kontraktor Sipil), Façade di Indonesia."
+                        </blockquote>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs text-slate-400 font-semibold">
+                        <i class="fa-solid fa-bullseye text-accent-500 mr-2"></i> Standar Kualitas Nasional
+                    </div>
+                </div>
+
+                <!-- Mission Card -->
+                <div class="glass-card rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-l-navy-900 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-navy-900/10 text-navy-900 rounded-xl flex items-center justify-center text-2xl font-bold mb-6">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-900 mb-4">MISI</h3>
+                        <p class="text-xs text-slate-500 font-semibold uppercase tracking-wider mb-3">Memberikan Pelayanan yang terbaik di bidang Jasa Sipil (Kontraktor Sipil) & Façade yang mengedepankan:</p>
+
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3 text-slate-700 text-sm sm:text-base">
+                                <span class="bg-navy-900 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</span>
+                                <span>Mengembangkan sumber daya manusia yang ahli dibidangnya.</span>
+                            </li>
+                            <li class="flex items-start space-x-3 text-slate-700 text-sm sm:text-base">
+                                <span class="bg-navy-900 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</span>
+                                <span>Mengembangkan sistem manajemen, teknologi dan inovasi di bidang Jasa Sipil (Kontraktor Sipil), Façade secara berkesinambungan.</span>
+                            </li>
+                            <li class="flex items-start space-x-3 text-slate-700 text-sm sm:text-base">
+                                <span class="bg-navy-900 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</span>
+                                <span>Memiliki kedisiplinan dan integritas yang tinggi.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs text-slate-400 font-semibold">
+                        <i class="fa-solid fa-check-double text-emerald-500 mr-2"></i> Komitmen Terhadap Profesionalisme
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-navy-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Layanan Utama</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Ruang Lingkup Pekerjaan & Divisi
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Layanan komprehensif yang dirancang untuk memenuhi kebutuhan infrastruktur sipil dan façade arsitektural modern.
+                </p>
+            </div>
+
+            <!-- Divisi Services Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Divisi 1: Jasa Sipil / Kontraktor Sipil -->
+                <div class="glass-card-dark rounded-2xl p-8 hover:border-accent-500/50 transition-all duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 bg-accent-500/20 text-accent-500 rounded-xl flex items-center justify-center text-2xl font-bold border border-accent-500/30">
+                            <i class="fa-solid fa-trowel-bricks"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-accent-500 uppercase tracking-widest block">Divisi 01</span>
+                            <h3 class="text-2xl font-bold text-white">Jasa Sipil (Kontraktor Sipil)</h3>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        Menyediakan jasa di bidang konstruksi sipil, pemeliharaan bangunan, pengerjaan keteknikan pelapisan substrat, serta penyelesaian rincian arsitektural.
+                    </p>
+
+                    <!-- Bullet Items Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Konstruksi Sipil</span>
+                        </div>
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Maintenance / Perawatan Gedung</span>
+                        </div>
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Pekerjaan Keteknikan</span>
+                        </div>
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Pelapisan Substrat</span>
+                        </div>
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Detailing Pekerjaan</span>
+                        </div>
+                        <div class="bg-navy-900/80 p-3 rounded-lg border border-slate-800 flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent-500 text-sm"></i>
+                            <span class="text-slate-200 text-sm font-medium">Finishing Sipil & Arsitektur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divisi 2: Façade -->
+                <div class="glass-card-dark rounded-2xl p-8 hover:border-accent-500/50 transition-all duration-300">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-14 h-14 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center text-2xl font-bold border border-amber-500/30">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-widest block">Divisi 02</span>
+                            <h3 class="text-2xl font-bold text-white">Façade Specialist</h3>
+                        </div>
+                    </div>
+
+                    <!-- Categories inside Façade -->
+                    <div class="space-y-4">
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-accent-500 font-bold text-sm mb-1 flex items-center">
+                                <i class="fa-solid fa-truck-ramp-box mr-2"></i> Supply & Installation
+                            </h4>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Menyediakan berbagai macam material façade sesuai spesifikasi dan kualitas yang diminta konsumen serta didukung tenaga ahli dalam pemasangan dan pengerjaannya.
+                            </p>
+                        </div>
+
+                        <div class="bg-navy-900/80 p-4 rounded-xl border border-slate-800">
+                            <h4 class="text-amber-400 font-bold text-sm mb-1 flex items-center">
+                                <i class="fa-solid fa-droplet-slash mr-2"></i> Water Test On Site & PMU
+                            </h4>
+                            <p class="text-xs text-slate-300 leading-relaxed">
+                                Performance Mock Up Unit (PMU) & pengujian kebocoran di lapangan dengan rangkaian peralatan standar mengacu pada spesifikasi konsultan.
+                            </p>
+                        </div>
+
+                        <!-- Item Pekerjaan Systems -->
+                        <div class="pt-2">
+                            <span class="text-xs text-slate-400 font-semibold block mb-2">Item Pekerjaan Khusus:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-slate-800 text-slate-200 text-xs px-3 py-1.5 rounded-md border border-slate-700">
+                                    <i class="fa-solid fa-border-all text-accent-500 mr-1.5"></i> Window Wall System
+                                </span>
+                                <span class="bg-slate-800 text-slate-200 text-xs px-3 py-1.5 rounded-md border border-slate-700">
+                                    <i class="fa-solid fa-grip-vertical text-accent-500 mr-1.5"></i> Curtain Wall Stick System
+                                </span>
+                                <span class="bg-slate-800 text-slate-200 text-xs px-3 py-1.5 rounded-md border border-slate-700">
+                                    <i class="fa-solid fa-cubes text-accent-500 mr-1.5"></i> Curtain Wall Unitized System
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Keunggulan Perusahaan</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Mengapa Memilih PT. PRA?
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Keutamaan komitmen kami sebagai standar mitra konstruksi terpercaya
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-accent-500/10 text-accent-500 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Tim Berpengalaman</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Didukung oleh tenaga lapangan dan manajemen proyek yang teruji menyelesaikan proyek berkualifikasi tinggi.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-navy-900/10 text-navy-900 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Tenaga Ahli Dibidangnya</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Spesialisasi teknis dalam konstruksi jembatan, tower SUTET, gedung, hingga pengujian presisi façade.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Fokus Pada Kualitas Pekerjaan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Menggunakan material berstandar dan prosedur ketat untuk hasil pekerjaan yang tahan lama dan presisi.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Sistem Kerja Profesional</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Manajemen proyek terstruktur dari perencanaan, pelaksanaan, kontrol mutu hingga handover tepat waktu.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Kedisiplinan & Integritas Tinggi</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Menjadikan nilai etika kerja, kejujuran, serta kepatuhan keselamatan (K3) sebagai tolok ukur utama.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-slate-200 group">
+                    <div class="w-12 h-12 bg-rose-500/10 text-rose-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Teknologi & Inovasi Berkelanjutan</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Terus memperbarui metode kerja, peralatan water testing PMU, serta efisiensi teknik pemasangan material.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Experience / Portfolio Section -->
+    <section id="projects" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Pengalaman Kerja</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Daftar Pengalaman Proyek</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-2 md:mt-0">
+                    Rekam jejak eksekusi proyek PT. Primasindo Raya Abadi di berbagai sektor industri dan lokasi.
+                </p>
+            </div>
+
+            <!-- Portfolio Category Filter Tabs -->
+            <div class="flex flex-wrap gap-2 mb-10 pb-2 border-b border-slate-800">
+                <button class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold border border-slate-700 transition-all" data-filter="all">All Projects</button>
+                <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold border border-slate-700 text-slate-300 hover:text-white transition-all" data-filter="civil">Civil</button>
+                <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold border border-slate-700 text-slate-300 hover:text-white transition-all" data-filter="facade">Façade</button>
+                <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold border border-slate-700 text-slate-300 hover:text-white transition-all" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold border border-slate-700 text-slate-300 hover:text-white transition-all" data-filter="engineering">Engineering</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Project Item 1 -->
+                <div class="project-card facade glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/lotte_balikpapan.png" alt="Frame Glass Lotte Balikpapan" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2020</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Façade</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Frame Glass – Lotte Balikpapan</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Lotte Indonesia</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="project-card facade glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/water_ready.png" alt="Water Test - Padma Hotel Semarang" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2020</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Façade / Water Test</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Water Test – Padma Hotel Semarang</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Srimurni Surabaya</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="project-card civil infrastructure glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/sutet_muara.png" alt="Pondasi SUTET PLN 150 KV Muara Tawar T24 & T25" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2022</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Infrastructure / Civil</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Pondasi SUTET PLN 150 KV Muara Tawar T24 & T25</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Bukaka Teknik Utama</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 4 -->
+                <div class="project-card civil infrastructure glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/sutet_duri.png" alt="Pondasi SUTET PLN 500 KV Duri Kosambi T09–T13" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2023</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Infrastructure / Civil</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Pondasi SUTET PLN 500 KV Duri Kosambi T09–T13</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Bina Pertiwi Energi</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 5 -->
+                <div class="project-card engineering infrastructure glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/fabrikasi.png" alt="Fabrikasi & Material Cable Bridge – Tambang Emas" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2023</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Engineering</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Fabrikasi & Material Cable Bridge – Tambang Emas</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Bina Pertiwi Energi / PT Sumbawa Jutaraya</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 6 -->
+                <div class="project-card civil glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/dapur_catering.png" alt="Pembangunan Dapur Catering" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2023</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Civil</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Pembangunan Dapur Catering</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">Prima Catering</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 7 -->
+                <div class="project-card engineering glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/Elektrifikasi_SKTM.png" alt="Elektrifikasi Segmen B Sumbawa – Tambang Emas" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2024</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Engineering</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Elektrifikasi Segmen B Sumbawa – Tambang Emas</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Sumbawa Jutaraya</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 8 -->
+                <div class="project-card engineering infrastructure glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/jembatan_sumbawa.jpg" alt="Instalasi Jembatan (Cable Bridge) Sumbawa – Tambang Emas" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2024</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Infrastructure</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Instalasi Jembatan (Cable Bridge) Sumbawa – Tambang Emas</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Sumbawa Jutaraya</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project Item 9 -->
+                <div class="project-card engineering infrastructure glass-card-dark rounded-xl overflow-hidden border border-slate-800 hover:border-accent-500/50 transition-all duration-300">
+<img src="images/jembatan_meas.jpg" alt="Instalasi Jembatan MEAS 35 Meter Sumbawa – Tambang Emas" class="w-full h-44 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <span class="bg-accent-500/20 text-accent-500 text-[11px] font-bold px-2.5 py-1 rounded">2024</span>
+                            <span class="text-xs text-slate-400 font-medium"><i class="fa-solid fa-tag text-accent-500 mr-1"></i> Infrastructure</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Instalasi Jembatan MEAS 35 Meter Sumbawa – Tambang Emas</h3>
+                        <p class="text-xs text-slate-400 flex items-center mt-3">
+                            <i class="fa-solid fa-handshake mr-2 text-slate-500"></i> Client: <strong class="text-slate-200 ml-1">PT Sumbawa Jutaraya</strong>
+                        </p>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="py-20 bg-slate-950 text-white border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-images"></i>
+                    <span>Dokumentasi Lapangan</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Galeri Proyek Company Profile</h2>
+                <p class="text-slate-400 text-sm mt-2">Klik gambar untuk melihat preview dokumentasi fisik pekerjaan di lokasi</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                <!-- Gallery 1 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/sutet_muara.png" data-title="SUTET 150 KV Muara Tawar">
+                    <img src="images/sutet_muara.png" alt="SUTET 150 KV Muara Tawar" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Tower Transmisi</span>
+                        <h4 class="text-sm font-bold text-white">SUTET 150 KV Muara Tawar</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 2 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/sutet_duri.png" data-title="SUTET 500 KV Duri Kosambi">
+                    <img src="images/sutet_duri.png" alt="SUTET 500 KV Duri Kosambi" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Bar Bending & Civil</span>
+                        <h4 class="text-sm font-bold text-white">SUTET 500 KV Duri Kosambi</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 3 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/pondasi_tower.jpg" data-title="Pondasi Tower 500 KV">
+                    <img src="images/pondasi_tower.jpg" alt="Pondasi Tower 500 KV" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Pengecoran Pilecap</span>
+                        <h4 class="text-sm font-bold text-white">Pondasi Tower 500 KV</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 4 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/Elektrifikasi_SKTM.png" data-title="Elektrifikasi SKTM Segmen B – Sumbawa">
+                    <img src="images/Elektrifikasi_SKTM.png" alt="Elektrifikasi SKTM Sumbawa" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">SKTM Site Pangulir</span>
+                        <h4 class="text-sm font-bold text-white">Elektrifikasi SKTM Segmen B – Sumbawa</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 5 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/jembatan_sumbawa.jpg" data-title="Instalasi Cable Bridge – Sumbawa">
+                    <img src="images/jembatan_sumbawa.jpg" alt="Instalasi Cable Bridge Sumbawa" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Jembatan Cable Rinti</span>
+                        <h4 class="text-sm font-bold text-white">Instalasi Cable Bridge – Sumbawa</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 6 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/langsir_material.png" data-title="Langsir Material Jembatan by Heli">
+                    <img src="images/langsir_material.png" alt="Langsir Material Jembatan Helicopter" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Logistik Remote Area</span>
+                        <h4 class="text-sm font-bold text-white">Langsir Material Jembatan by Heli</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 7 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/dapur_catering.png" data-title="Pembangunan Dapur Catering">
+                    <img src="images/dapur_catering.png" alt="Pembangunan Dapur Catering" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Civil & Finishing</span>
+                        <h4 class="text-sm font-bold text-white">Pembangunan Dapur Catering</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 8 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/delta_mas.png" data-title="Delta Mas Project">
+                    <img src="images/delta_mas.png" alt="Delta Mas Project" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Kato Heavy Equipment</span>
+                        <h4 class="text-sm font-bold text-white">Delta Mas Project</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 9 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/blue_bird.png" data-title="Blue Bird Project">
+                    <img src="images/blue_bird.png" alt="Blue Bird Project Façade" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Façade System</span>
+                        <h4 class="text-sm font-bold text-white">Blue Bird Project</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 10 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/squarted.png" data-title="Squarted Façade">
+                    <img src="images/squarted.png" alt="Squarted Façade" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Architectural Glazing</span>
+                        <h4 class="text-sm font-bold text-white">Squarted Project</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 11 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/lotte_balikpapan.png" data-title="Lotte Balikpapan – Frame Glass">
+                    <img src="images/lotte_balikpapan.png" alt="Lotte Balikpapan Frame Glass" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">Aluminium & Glass</span>
+                        <h4 class="text-sm font-bold text-white">Lotte Balikpapan – Frame Glass</h4>
+                    </div>
+                </div>
+
+                <!-- Gallery 12 -->
+                <div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-900 border border-slate-800 cursor-pointer" data-img="images/water_tes.png" data-title="Water Test Project (PMU) – Padma Hotel Semarang">
+                    <img src="images/water_tes.png" alt="Water Test Project Padma Hotel" class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4">
+                        <span class="text-[11px] text-accent-500 font-bold uppercase">PMU Testing</span>
+                        <h4 class="text-sm font-bold text-white">Water Test – Padma Hotel Semarang</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <span>Klien & Mitra Kerja</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Dipercaya Oleh Perusahaan Terkemuka</h2>
+                <p class="text-slate-500 text-sm mt-2">Daftar pemberi kerja dan mitra strategis yang telah bekerja sama dengan PT. PRA</p>
+            </div>
+
+            <!-- Client Logos Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-building-flag text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Trimatra Tata Graha</h4>
+                    <span class="text-[11px] text-slate-400">Jakarta</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-industry text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Bukaka Teknik Utama Tbk</h4>
+                    <span class="text-[11px] text-slate-400">Teknik & Infrastruktur</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-mountain-city text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Sumbawa Jutaraya</h4>
+                    <span class="text-[11px] text-slate-400">Tambang Emas</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-bolt text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Bina Pertiwi Energi</h4>
+                    <span class="text-[11px] text-slate-400">Energi & Transmisi</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-cubes-stacked text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Cemindo Gemilang Tbk</h4>
+                    <span class="text-[11px] text-slate-400">Industri Semen</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group">
+                    <i class="fa-solid fa-hospital-user text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Srimurni Surabaya</h4>
+                    <span class="text-[11px] text-slate-400">Jawa Timur</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-xl flex flex-col items-center justify-center text-center hover:shadow-md transition-all duration-300 filter grayscale hover:grayscale-0 group sm:col-span-2 lg:col-span-2">
+                    <i class="fa-solid fa-store text-3xl text-navy-800 group-hover:text-accent-500 mb-2 transition-colors"></i>
+                    <h4 class="font-bold text-slate-800 text-sm">PT. Lotte Indonesia</h4>
+                    <span class="text-[11px] text-slate-400">Ritel & Properti Indonesia</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Legalitas Section -->
+    <section id="legalitas" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <span>Kepatuhan Hukum & Legalitas</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Legalitas Resmi Perusahaan
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Dokumen keabsahan pendirian dan izin operasional resmi PT. Primasindo Raya Abadi
+                </p>
+            </div>
+
+            <!-- Legal Documents Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- SK Kemenkumham 2021 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 text-emerald-600 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">SK Kemenkumham RI</span>
+                            <span class="text-xs font-bold text-slate-700">Tahun 2021</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-bold text-slate-900 mb-2">No. AHU-0027235.AH.01.01 Tahun 2021</p>
+                    <p class="text-xs text-slate-500">Tanggal Pengesahan: 21 APRIL 2021</p>
+                </div>
+
+                <!-- SK Kemenkumham 2022 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-emerald-500/10 text-emerald-600 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">SK Kemenkumham RI</span>
+                            <span class="text-xs font-bold text-slate-700">Tahun 2022</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-bold text-slate-900 mb-2">No. AHU-0092184.AH.01.02 Tahun 2022</p>
+                    <p class="text-xs text-slate-500">Tanggal Pengesahan: 20 DESEMBER 2022</p>
+                </div>
+
+                <!-- Akta Notaris 1 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-navy-900/10 text-navy-900 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">Akta Notaris No. 6</span>
+                            <span class="text-xs font-bold text-slate-700">Pendirian</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-bold text-slate-900 mb-2">Notaris Slamet Sumardi, SH., M.Kn.</p>
+                    <p class="text-xs text-slate-500">Tanggal Akta: 26 MARET 2021</p>
+                </div>
+
+                <!-- Akta Notaris 2 -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-navy-900/10 text-navy-900 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">Akta Notaris No. 6</span>
+                            <span class="text-xs font-bold text-slate-700">Perubahan</span>
+                        </div>
+                    </div>
+                    <p class="text-sm font-bold text-slate-900 mb-2">Notaris Taufik, SH., M.Kn.</p>
+                    <p class="text-xs text-slate-500">Tanggal Akta: 20 DESEMBER 2022</p>
+                </div>
+
+                <!-- NIB -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-accent-500/10 text-accent-500 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">Nomor Induk Berusaha</span>
+                            <span class="text-xs font-bold text-slate-700">NIB Perusahaan</span>
+                        </div>
+                    </div>
+                    <p class="text-base font-extrabold text-slate-900 mb-2 tracking-wide">1229003402018</p>
+                    <p class="text-xs text-slate-500">Terdaftar Resmi Online Single Submission (OSS)</p>
+                </div>
+
+                <!-- NPWP -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-600 rounded-lg flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-receipt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 font-semibold block">Nomor Pokok Wajib Pajak</span>
+                            <span class="text-xs font-bold text-slate-700">NPWP Perusahaan</span>
+                        </div>
+                    </div>
+                    <p class="text-base font-extrabold text-slate-900 mb-2 tracking-wide">42.096.633.5-432.000</p>
+                    <p class="text-xs text-slate-500">Status Wajib Pajak Aktif</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="py-16 bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                Siap Mendukung Proyek Konstruksi Anda
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal">
+                Diskusikan kebutuhan proyek sipil dan façade Anda bersama tim profesional PT. Primasindo Raya Abadi.
+            </p>
+            <div class="pt-4">
+                <a href="#contact" class="inline-flex items-center space-x-3 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-xl shadow-accent-500/25 transition-all transform hover:-translate-y-1">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Hubungi Kami Sekarang</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 text-accent-500 font-bold text-xs uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>Informasi & Lokasi Kontak</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                    Hubungi PT. Primasindo Raya Abadi
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">
+                    Tim kami siap merespons pertanyaan proyek, penawaran, dan kerjasama teknis.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+
+                <!-- Left Information Column -->
+                <div class="lg:col-span-5 space-y-6">
+
+                    <!-- Office Card -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-200 flex items-start space-x-4 shadow-sm">
+                        <div class="w-12 h-12 bg-navy-900 text-accent-500 rounded-xl flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base">Kantor Utama (Office)</h4>
+                            <p class="text-sm text-slate-600 mt-1">
+                                Ruko Dukuh Zambrud GF No. 67, Kel. Padurenan, Kec. Mustikajaya, Kota Bekasi, Jawa Barat
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Workshop Card -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-200 flex items-start space-x-4 shadow-sm">
+                        <div class="w-12 h-12 bg-navy-900 text-amber-500 rounded-xl flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fa-solid fa-warehouse"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base">Workshop</h4>
+                            <p class="text-sm text-slate-600 mt-1">
+                                Jl. Kedaung No. 254, Kel. Cimuning, Kec. Mustikajaya, Kota Bekasi, Jawa Barat
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Phone & Email Card -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-accent-500/10 text-accent-500 rounded-lg flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-semibold block">Telepon Kantor</span>
+                                <a href="tel:021-29367077" class="text-sm font-bold text-slate-900 hover:text-accent-500">021-29367077</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-10 h-10 bg-accent-500/10 text-accent-500 rounded-lg flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-semibold block">Email Perusahaan</span>
+                                <a href="mailto:primasindo.rayabadi@gmail.com" class="text-sm font-bold text-slate-900 hover:text-accent-500">primasindo.rayabadi@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Embedded Google Map -->
+                    <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-64">
+                        <iframe
+                            title="PT PRA Office Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.808027170889!2d107.03789037499092!3d-6.28895999370005!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6993a40df1569d%3A0x8dd37397b9eeae1e!2sDukuh%20Zamrud!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- Right Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-2xl border border-slate-200 shadow-md">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
+                            <i class="fa-regular fa-paper-plane text-accent-500 mr-2"></i> Kirim Pesan / Form Konsultasi
+                        </h3>
+
+                        <form id="contact-form" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nama Lengkap *</label>
+                                    <input type="text" id="name" required placeholder="Contoh: Budi Santoso" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nama Perusahaan / Instansi</label>
+                                    <input type="text" id="company" placeholder="Contoh: PT. Konstruksi Utama" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email *</label>
+                                    <input type="email" id="email" required placeholder="nama@perusahaan.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Nomor HP / WhatsApp *</label>
+                                    <input type="tel" id="phone" required placeholder="08123456789" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="service_category" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Kategori Proyek</label>
+                                <select id="service_category" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all">
+                                    <option value="Jasa Sipil / Kontraktor">Jasa Sipil / Kontraktor Sipil</option>
+                                    <option value="Façade Supply & Installation">Façade Supply & Installation</option>
+                                    <option value="Water Test On Site / PMU">Water Test On Site & PMU</option>
+                                    <option value="Pekerjaan Keteknikan & Maintenance">Pekerjaan Keteknikan & Maintenance</option>
+                                    <option value="Lainnya">Lainnya / Konsultasi Umum</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Detail Pesan / Kebutuhan Proyek *</label>
+                                <textarea id="message" rows="4" required placeholder="Jelaskan kebutuhan spesifikasi, lokasi proyek, dan jadwal pelaksanaan..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-accent-500 focus:bg-white transition-all"></textarea>
+                            </div>
+
+                            <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                                <button type="button" id="btnSendWA" class="flex-1 py-3.5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-orange-700 text-white font-bold rounded-xl text-xs shadow-lg shadow-accent-500/20 transition-all flex items-center justify-center gap-2 active:scale-95">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i> Kirim Pesan via WhatsApp
+                                </button>
+                                <button type="button" id="btnSendEmail" class="py-3.5 px-6 bg-navy-900 hover:bg-slate-800 text-accent-500 border border-accent-500/30 font-bold rounded-xl text-xs transition-all flex items-center justify-center gap-2 active:scale-95">
+                                    <i class="fa-solid fa-envelope"></i> Via Email
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy-950 text-slate-400 text-sm pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="images/eleman_logo.jpeg" alt="Logo PT Primasindo Raya Abadi" class="w-11 h-11 rounded-lg object-contain shadow-md group-hover:scale-105 transition-transform duration-300">
+                        <div>
+                            <span class="text-base font-extrabold text-white block leading-none">PT. PRIMASINDO RAYA ABADI</span>
+                            <span class="text-[10px] font-semibold tracking-wider text-accent-500 block mt-1">GENERAL CONTRACTOR & FACADE</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Perusahaan kontraktor sipil dan spesialis façade tepercaya di Indonesia dengan komitmen tinggi terhadap inovasi, keselamatan, dan kualitas pengerjaan.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigasi Cepat -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigasi Cepat</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#home" class="hover:text-accent-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-accent-500 transition-colors">Tentang Kami</a></li>
+                        <li><a href="#services" class="hover:text-accent-500 transition-colors">Ruang Lingkup Pekerjaan</a></li>
+                        <li><a href="#projects" class="hover:text-accent-500 transition-colors">Pengalaman Proyek</a></li>
+                        <li><a href="#clients" class="hover:text-accent-500 transition-colors">Klien Terpercaya</a></li>
+                        <li><a href="#legalitas" class="hover:text-accent-500 transition-colors">Legalitas Resmi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Layanan Spesialis -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Layanan Utama</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><span class="text-slate-300">Konstruksi Sipil & Gedung</span></li>
+                        <li><span class="text-slate-300">Maintenance & Maintenance Substrat</span></li>
+                        <li><span class="text-slate-300">Window Wall System</span></li>
+                        <li><span class="text-slate-300">Curtain Wall Stick System</span></li>
+                        <li><span class="text-slate-300">Curtain Wall Unitized System</span></li>
+                        <li><span class="text-slate-300">Water Test On Site & PMU</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Kontak Singkat -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Kontak Kantor</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start space-x-2">
+                            <i class="fa-solid fa-location-dot text-accent-500 mt-1"></i>
+                            <span>Ruko Dukuh Zambrud GF No. 67, Padurenan, MustikaJaya, Bekasi</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-phone text-accent-500"></i>
+                            <span>021-29367077</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-envelope text-accent-500"></i>
+                            <span>primasindo.rayabadi@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>© 2026 PT. Primasindo Raya Abadi. All Rights Reserved.</p>
+                <p class="mt-2 sm:mt-0">General Contractor & Façade Specialist</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-accent-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-accent-600 z-40 transform hover:scale-110">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <button id="close-lightbox" class="absolute top-6 right-6 text-white text-3xl hover:text-accent-500 transition-colors focus:outline-none">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="max-w-4xl w-full text-center space-y-4">
+            <img id="lightbox-img" src="" alt="Project Preview" class="max-h-[80vh] mx-auto rounded-xl border border-slate-700 shadow-2xl object-contain">
+            <h3 id="lightbox-title" class="text-white font-bold text-lg"></h3>
+        </div>
+    </div>
+
+    <!-- Notification Toast Box -->
+    <div id="toast" class="fixed bottom-6 left-6 bg-slate-900 border border-emerald-500 text-white px-6 py-4 rounded-xl shadow-2xl z-50 transform translate-y-24 opacity-0 transition-all duration-300 flex items-center space-x-3">
+        <i class="fa-solid fa-circle-check text-emerald-500 text-xl"></i>
+        <div>
+            <h5 class="font-bold text-sm" id="toast-title">Pesan Terkirim!</h5>
+            <p class="text-xs text-slate-300" id="toast-desc">Terima kasih. Tim PT. PRA akan segera menghubungi Anda.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // 1. Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            mobileBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                if (mobileMenu.classList.contains('hidden')) {
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                } else {
+                    menuIcon.classList.remove('fa-bars');
+                    menuIcon.classList.add('fa-xmark');
+                }
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+            // 2. Scroll Progress Bar & Back To Top Button
+            const progressBar = document.getElementById('scroll-progress');
+            const backToTopBtn = document.getElementById('back-to-top');
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+
+                progressBar.style.width = scrollPercent + '%';
+
+                if (scrollTop > 400) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                    backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                    backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 3. Projects Portfolio Filter
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.classList.contains(filter)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // 4. Image Lightbox Modal Logic
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const closeLightbox = document.getElementById('close-lightbox');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.getAttribute('data-img');
+                    const title = this.getAttribute('data-title');
+
+                    lightboxImg.src = imgSrc;
+                    lightboxTitle.textContent = title;
+
+                    lightboxModal.classList.remove('opacity-0', 'pointer-events-none');
+                    lightboxModal.classList.add('opacity-100', 'pointer-events-auto');
+                });
+            });
+
+            closeLightbox.addEventListener('click', function() {
+                lightboxModal.classList.add('opacity-0', 'pointer-events-none');
+                lightboxModal.classList.remove('opacity-100', 'pointer-events-auto');
+            });
+
+            lightboxModal.addEventListener('click', function(e) {
+                if (e.target === lightboxModal) {
+                    lightboxModal.classList.add('opacity-0', 'pointer-events-none');
+                    lightboxModal.classList.remove('opacity-100', 'pointer-events-auto');
+                }
+            });
+
+            // 5. Contact Form - Kirim ke WhatsApp & Email
+            const contactForm = document.getElementById('contact-form');
+            const toast = document.getElementById('toast');
+            const toastTitle = document.getElementById('toast-title');
+            const toastDesc = document.getElementById('toast-desc');
+            const btnSendWA = document.getElementById('btnSendWA');
+            const btnSendEmail = document.getElementById('btnSendEmail');
+
+            // Nomor WA tujuan (format internasional tanpa "+" atau "0" di depan)
+            const WA_NUMBER = '6283143550817';
+            const COMPANY_EMAIL = 'primasindo.rayabadi@gmail.com';
+
+            function buildMessage() {
+                const name = document.getElementById('name').value.trim();
+                const company = document.getElementById('company').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const category = document.getElementById('service_category').value;
+                const message = document.getElementById('message').value.trim();
+
+                let text = 'Halo PT. Primasindo Raya Abadi, saya ingin konsultasi proyek dengan detail berikut:\n\n';
+                text += 'Nama: ' + name + '\n';
+                if (company) {
+                    text += 'Perusahaan/Instansi: ' + company + '\n';
+                }
+                text += 'Email: ' + email + '\n';
+                text += 'No. HP/WhatsApp: ' + phone + '\n';
+                text += 'Kategori Proyek: ' + category + '\n';
+                text += 'Detail Kebutuhan: ' + message;
+
+                return text;
+            }
+
+            function showToast(title, desc) {
+                toastTitle.textContent = title;
+                toastDesc.textContent = desc;
+
+                toast.classList.remove('translate-y-24', 'opacity-0');
+                toast.classList.add('translate-y-0', 'opacity-100');
+
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                    toast.classList.add('translate-y-24', 'opacity-0');
+                }, 4000);
+            }
+
+            // Tombol Kirim via WhatsApp
+            btnSendWA.addEventListener('click', function() {
+                if (!contactForm.checkValidity()) {
+                    contactForm.reportValidity();
+                    return;
+                }
+
+                const text = buildMessage();
+                const waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+
+                window.open(waUrl, '_blank');
+
+                showToast('Membuka WhatsApp...', 'Pesan Anda sudah disiapkan, silakan kirim di aplikasi WhatsApp.');
+                contactForm.reset();
+            });
+
+            // Tombol Kirim via Email
+            btnSendEmail.addEventListener('click', function() {
+                if (!contactForm.checkValidity()) {
+                    contactForm.reportValidity();
+                    return;
+                }
+
+                const text = buildMessage();
+                const subject = 'Permintaan Konsultasi Proyek - Website PT PRA';
+                const mailUrl = 'mailto:' + COMPANY_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(text);
+
+                window.location.href = mailUrl;
+
+                showToast('Membuka Aplikasi Email...', 'Silakan kirim email yang sudah disiapkan.');
+                contactForm.reset();
+            });
+
+        });
+    </script>
+</body>
+</html>
