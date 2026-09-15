@@ -1331,8 +1331,57 @@
         </div>
     </footer>
 
+    <!-- FAQ Chatbot Widget -->
+    <div id="chatbot-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end font-sans">
+
+        <!-- Chat Window -->
+        <div id="chatbot-window" class="hidden mb-4 w-[92vw] max-w-sm h-[70vh] max-h-[520px] bg-navy-950 border border-slate-700/80 rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+            <!-- Header -->
+            <div class="bg-navy-900 border-b border-slate-800 px-4 py-4 flex items-center justify-between flex-shrink-0">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-accent-500/20 border border-accent-500/40 flex items-center justify-center text-accent-500">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-sm leading-none">Asisten PT. PRA</h4>
+                        <span class="text-[11px] text-emerald-400 flex items-center mt-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5"></span>Siap membantu</span>
+                    </div>
+                </div>
+                <button id="chatbot-close" class="text-slate-400 hover:text-white transition-colors" aria-label="Tutup chat">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Messages -->
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto px-4 py-4 space-y-3 bg-navy-950"></div>
+
+            <!-- Quick Replies -->
+            <div id="chatbot-quick-replies" class="px-4 pb-3 flex flex-wrap gap-2 flex-shrink-0"></div>
+
+            <!-- Input -->
+            <div class="border-t border-slate-800 p-3 bg-navy-900 flex-shrink-0 space-y-2">
+                <div class="flex items-center space-x-2">
+                    <input id="chatbot-input" type="text" placeholder="Tulis pertanyaan Anda..." class="flex-1 bg-slate-800/80 border border-slate-700 text-white placeholder-slate-500 text-sm rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-accent-500">
+                    <button id="chatbot-send" class="w-10 h-10 flex-shrink-0 bg-accent-500 hover:bg-accent-600 text-white rounded-lg flex items-center justify-center transition-colors" aria-label="Kirim">
+                        <i class="fa-solid fa-paper-plane text-sm"></i>
+                    </button>
+                </div>
+                <a id="chatbot-wa-link" href="#" target="_blank" class="text-[11px] text-slate-400 hover:text-accent-500 flex items-center justify-center gap-1.5 transition-colors">
+                    <i class="fa-brands fa-whatsapp"></i> Ingin bicara dengan tim kami langsung? Chat WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button id="chatbot-toggle" class="w-16 h-16 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 text-white shadow-2xl shadow-accent-500/30 flex items-center justify-center text-2xl hover:scale-105 transition-transform relative" aria-label="Buka chat">
+            <i class="fa-solid fa-comment-dots" id="chatbot-icon-open"></i>
+            <i class="fa-solid fa-xmark hidden" id="chatbot-icon-close"></i>
+            <span id="chatbot-badge" class="absolute -top-1 -right-1 w-5 h-5 bg-rose-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center border-2 border-navy-950">1</span>
+        </button>
+    </div>
+
     <!-- Back To Top Button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 bg-accent-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-accent-600 z-40 transform hover:scale-110">
+    <button id="back-to-top" class="fixed bottom-24 right-6 bg-accent-500 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-accent-600 z-40 transform hover:scale-110">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
@@ -1539,6 +1588,179 @@
 
                 showToast('Membuka Aplikasi Email...', 'Silakan kirim email yang sudah disiapkan.');
                 contactForm.reset();
+            });
+
+            // 6. FAQ Chatbot Widget
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const chatbotCloseBtn = document.getElementById('chatbot-close');
+            const chatbotMessages = document.getElementById('chatbot-messages');
+            const chatbotQuickReplies = document.getElementById('chatbot-quick-replies');
+            const chatbotInput = document.getElementById('chatbot-input');
+            const chatbotSend = document.getElementById('chatbot-send');
+            const chatbotBadge = document.getElementById('chatbot-badge');
+            const chatbotIconOpen = document.getElementById('chatbot-icon-open');
+            const chatbotIconClose = document.getElementById('chatbot-icon-close');
+            const chatbotWaLink = document.getElementById('chatbot-wa-link');
+
+            const CHATBOT_WA_NUMBER = '6283143550817';
+            chatbotWaLink.href = 'https://wa.me/' + CHATBOT_WA_NUMBER + '?text=' + encodeURIComponent('Halo PT. Primasindo Raya Abadi, saya ingin bertanya lebih lanjut.');
+
+            const chatbotFAQ = [
+                {
+                    keywords: ['layanan', 'jasa', 'services', 'kerjaan', 'pekerjaan', 'kontraktor', 'divisi'],
+                    answer: 'PT. Primasindo Raya Abadi punya 2 divisi utama:<br><br>1️⃣ <strong>Jasa Sipil (Kontraktor Sipil)</strong> — konstruksi, maintenance gedung, pekerjaan keteknikan, hingga finishing arsitektur.<br>2️⃣ <strong>Façade Specialist</strong> — supply & instalasi Window Wall, Curtain Wall (Stick & Unitized System), serta Water Test On Site / PMU.'
+                },
+                {
+                    keywords: ['lokasi', 'alamat', 'kantor', 'workshop', 'dimana', 'di mana'],
+                    answer: 'Kantor kami di Ruko Dukuh Zambrud GF No. 67, Padurenan, Mustikajaya, Kota Bekasi, Jawa Barat.<br>Workshop di Jl. Kedaung No. 254, Cimuning, Mustikajaya, Kota Bekasi.'
+                },
+                {
+                    keywords: ['pengalaman', 'proyek', 'portofolio', 'sudah pernah', 'klien', 'client'],
+                    answer: 'Kami sudah menangani proyek untuk PT Lotte Indonesia (Frame Glass Balikpapan), PT Bukaka Teknik Utama & PT Bina Pertiwi Energi (fondasi SUTET PLN 150–500 KV), PT Sumbawa Jutaraya (jembatan & elektrifikasi tambang emas), dan Padma Hotel Semarang (water test). Detail lengkap ada di bagian "Projects" pada halaman ini.'
+                },
+                {
+                    keywords: ['legalitas', 'legal', 'izin', 'nib', 'npwp', 'akta', 'terdaftar', 'resmi'],
+                    answer: 'PT. PRA terdaftar resmi dengan SK Kemenkumham RI, memiliki NIB (1229003402018), NPWP aktif (42.096.633.5-432.000), serta Akta Notaris pendirian & perubahan. Detail lengkap ada di bagian "Legalitas" pada halaman ini.'
+                },
+                {
+                    keywords: ['konsultasi', 'penawaran', 'harga', 'biaya', 'quote', 'rab', 'estimasi'],
+                    answer: 'Untuk konsultasi & penawaran, silakan isi form pada bagian "Contact" di halaman ini, atau langsung chat tim kami via WhatsApp supaya bisa dibantu hitungkan sesuai spesifikasi dan lokasi proyek Anda.'
+                },
+                {
+                    keywords: ['kontak', 'telepon', 'telpon', 'nomor', 'hubungi', 'wa', 'whatsapp', 'email'],
+                    answer: 'Anda bisa hubungi kami di:<br>📞 021-29367077<br>✉️ primasindo.rayabadi@gmail.com<br>Atau langsung chat via tombol WhatsApp di bawah kolom ini.'
+                },
+                {
+                    keywords: ['jam', 'operasional', 'buka', 'tutup', 'kapan'],
+                    answer: 'Tim kami umumnya merespons pesan pada jam kerja Senin–Sabtu. Untuk kepastian jadwal & respons tercepat, silakan hubungi kami langsung via WhatsApp.'
+                }
+            ];
+
+            const chatbotQuickReplyOptions = [
+                'Layanan apa saja?',
+                'Lokasi kantor dimana?',
+                'Bagaimana cara konsultasi?',
+                'Legalitas perusahaan?'
+            ];
+
+            function chatbotScrollToBottom() {
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }
+
+            function chatbotAppendMessage(html, sender) {
+                const wrapper = document.createElement('div');
+                wrapper.className = sender === 'user' ? 'flex justify-end' : 'flex justify-start';
+
+                const bubble = document.createElement('div');
+                bubble.className = sender === 'user'
+                    ? 'max-w-[80%] bg-accent-500 text-white text-sm rounded-2xl rounded-tr-sm px-4 py-2.5 leading-relaxed'
+                    : 'max-w-[80%] bg-slate-800 text-slate-100 text-sm rounded-2xl rounded-tl-sm px-4 py-2.5 leading-relaxed border border-slate-700';
+                bubble.innerHTML = html;
+
+                wrapper.appendChild(bubble);
+                chatbotMessages.appendChild(wrapper);
+                chatbotScrollToBottom();
+            }
+
+            function chatbotShowTyping() {
+                const wrapper = document.createElement('div');
+                wrapper.id = 'chatbot-typing';
+                wrapper.className = 'flex justify-start';
+                wrapper.innerHTML = '<div class="bg-slate-800 border border-slate-700 rounded-2xl rounded-tl-sm px-4 py-3 flex space-x-1"><span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay:0ms"></span><span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay:150ms"></span><span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay:300ms"></span></div>';
+                chatbotMessages.appendChild(wrapper);
+                chatbotScrollToBottom();
+            }
+
+            function chatbotRemoveTyping() {
+                const typing = document.getElementById('chatbot-typing');
+                if (typing) typing.remove();
+            }
+
+            function chatbotFindAnswer(userText) {
+                const lower = userText.toLowerCase();
+                for (const item of chatbotFAQ) {
+                    if (item.keywords.some(function(kw) { return lower.includes(kw); })) {
+                        return item.answer;
+                    }
+                }
+                return null;
+            }
+
+            function chatbotRenderQuickReplies() {
+                chatbotQuickReplies.innerHTML = '';
+                chatbotQuickReplyOptions.forEach(function(text) {
+                    const chip = document.createElement('button');
+                    chip.className = 'text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3 py-1.5 rounded-full transition-colors';
+                    chip.textContent = text;
+                    chip.addEventListener('click', function() { chatbotHandleUserMessage(text); });
+                    chatbotQuickReplies.appendChild(chip);
+                });
+            }
+
+            function chatbotBotReply(userText) {
+                chatbotShowTyping();
+                setTimeout(function() {
+                    chatbotRemoveTyping();
+                    const answer = chatbotFindAnswer(userText);
+                    if (answer) {
+                        chatbotAppendMessage(answer, 'bot');
+                    } else {
+                        const waText = encodeURIComponent('Halo PT. Primasindo Raya Abadi, saya ingin bertanya: ' + userText);
+                        chatbotAppendMessage(
+                            'Maaf, saya belum bisa jawab pertanyaan itu secara otomatis. Tim kami akan lebih siap membantu — silakan lanjut chat via <a href="https://wa.me/' + CHATBOT_WA_NUMBER + '?text=' + waText + '" target="_blank" class="text-accent-500 underline font-semibold">WhatsApp</a>.',
+                            'bot'
+                        );
+                    }
+                    chatbotRenderQuickReplies();
+                }, 600);
+            }
+
+            function chatbotHandleUserMessage(text) {
+                if (!text || !text.trim()) return;
+                chatbotAppendMessage(text.replace(/</g, '&lt;'), 'user');
+                chatbotInput.value = '';
+                chatbotBotReply(text);
+            }
+
+            let chatbotInitialized = false;
+            function chatbotInitConversation() {
+                if (chatbotInitialized) return;
+                chatbotInitialized = true;
+                chatbotAppendMessage('Halo! 👋 Saya asisten virtual PT. Primasindo Raya Abadi. Ada yang bisa saya bantu seputar layanan sipil & façade kami?', 'bot');
+                chatbotRenderQuickReplies();
+            }
+
+            chatbotToggle.addEventListener('click', function() {
+                const isHidden = chatbotWindow.classList.contains('hidden');
+                if (isHidden) {
+                    chatbotWindow.classList.remove('hidden');
+                    chatbotIconOpen.classList.add('hidden');
+                    chatbotIconClose.classList.remove('hidden');
+                    chatbotBadge.classList.add('hidden');
+                    chatbotInitConversation();
+                    chatbotInput.focus();
+                } else {
+                    chatbotWindow.classList.add('hidden');
+                    chatbotIconOpen.classList.remove('hidden');
+                    chatbotIconClose.classList.add('hidden');
+                }
+            });
+
+            chatbotCloseBtn.addEventListener('click', function() {
+                chatbotWindow.classList.add('hidden');
+                chatbotIconOpen.classList.remove('hidden');
+                chatbotIconClose.classList.add('hidden');
+            });
+
+            chatbotSend.addEventListener('click', function() {
+                chatbotHandleUserMessage(chatbotInput.value);
+            });
+
+            chatbotInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    chatbotHandleUserMessage(chatbotInput.value);
+                }
             });
 
         });
